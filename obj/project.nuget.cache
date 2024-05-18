@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "F7MC0kvtJ51KPg2SDxnDOrffGrM7EJQYVLovF5BiXkzYdTrI5En9DVn9q15XCSSFx2d8+8vmSd9ciwnaszPuTA==",
+  "dgSpecHash": "ZRkG4/EK4nSrGxnDYblTLtqmBYqxB7kQ45KnHEtVjdPR9NVJXIkDTt5K5BqOlw0yPOYXltrXpC39g0/9446kyA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hemil\\OneDrive - Fiap-Faculdade de Informática e Administração Paulista\\Projeto MVC .NET\\ChurnAnalytics\\ChurnAnalitycs\\ChurnAnalitycs.csproj",
+  "projectFilePath": "C:\\Users\\hemil\\OneDrive - Fiap-Faculdade de Informática e Administração Paulista\\Projeto MVC .NET\\ChurnAnalytics\\ChurnAnalitycs\\ChurnAnalytics.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hemil\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\hemil\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

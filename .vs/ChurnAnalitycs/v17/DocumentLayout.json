@@ -1,12 +1,54 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\hemil\\OneDrive - Fiap-Faculdade de Inform\u00E1tica e Administra\u00E7\u00E3o Paulista\\Projeto MVC .NET\\ChurnAnalytics\\ChurnAnalitycs\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EFAE2CA2-C261-4AAE-85B8-6DAD52CBD523}|ChurnAnalytics.csproj|c:\\users\\hemil\\onedrive - fiap-faculdade de inform\u00E1tica e administra\u00E7\u00E3o paulista\\projeto mvc .net\\churnanalytics\\churnanalitycs\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EFAE2CA2-C261-4AAE-85B8-6DAD52CBD523}|ChurnAnalytics.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFAE2CA2-C261-4AAE-85B8-6DAD52CBD523}|ChurnAnalytics.csproj|c:\\users\\hemil\\onedrive - fiap-faculdade de inform\u00E1tica e administra\u00E7\u00E3o paulista\\projeto mvc .net\\churnanalytics\\churnanalitycs\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EFAE2CA2-C261-4AAE-85B8-6DAD52CBD523}|ChurnAnalytics.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\hemil\\OneDrive - Fiap-Faculdade de Inform\u00E1tica e Administra\u00E7\u00E3o Paulista\\Projeto MVC .NET\\ChurnAnalytics\\ChurnAnalitycs\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\hemil\\OneDrive - Fiap-Faculdade de Inform\u00E1tica e Administra\u00E7\u00E3o Paulista\\Projeto MVC .NET\\ChurnAnalytics\\ChurnAnalitycs\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABMAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-18T16:26:01.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\hemil\\OneDrive - Fiap-Faculdade de Inform\u00E1tica e Administra\u00E7\u00E3o Paulista\\Projeto MVC .NET\\ChurnAnalytics\\ChurnAnalitycs\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\hemil\\OneDrive - Fiap-Faculdade de Inform\u00E1tica e Administra\u00E7\u00E3o Paulista\\Projeto MVC .NET\\ChurnAnalytics\\ChurnAnalitycs\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAAAEYAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-18T16:25:44.445Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

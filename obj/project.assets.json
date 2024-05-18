@@ -6304,9 +6304,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hemil\\OneDrive - Fiap-Faculdade de Informática e Administração Paulista\\Projeto MVC .NET\\ChurnAnalytics\\ChurnAnalitycs\\ChurnAnalitycs.csproj",
-      "projectName": "ChurnAnalitycs",
-      "projectPath": "C:\\Users\\hemil\\OneDrive - Fiap-Faculdade de Informática e Administração Paulista\\Projeto MVC .NET\\ChurnAnalytics\\ChurnAnalitycs\\ChurnAnalitycs.csproj",
+      "projectUniqueName": "C:\\Users\\hemil\\OneDrive - Fiap-Faculdade de Informática e Administração Paulista\\Projeto MVC .NET\\ChurnAnalytics\\ChurnAnalitycs\\ChurnAnalytics.csproj",
+      "projectName": "ChurnAnalytics",
+      "projectPath": "C:\\Users\\hemil\\OneDrive - Fiap-Faculdade de Informática e Administração Paulista\\Projeto MVC .NET\\ChurnAnalytics\\ChurnAnalitycs\\ChurnAnalytics.csproj",
       "packagesPath": "C:\\Users\\hemil\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\hemil\\OneDrive - Fiap-Faculdade de Informática e Administração Paulista\\Projeto MVC .NET\\ChurnAnalytics\\ChurnAnalitycs\\obj\\",
       "projectStyle": "PackageReference",
