@@ -1,0 +1,110 @@
+﻿@model IEnumerable<ChurnAnalitycs.Models.Feedback>
+
+@{
+    ViewData["Title"] = "Feedbacks";
+}
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    h1 {
+        color: #333;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        background-color: #007bff;
+        border: none;
+        color: white;
+        padding: 6px 12px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 14px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 6px;
+        transition: background-color 0.3s;
+    }
+
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid #ddd;
+    }
+
+        .table th,
+        .table td {
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+
+        .table th {
+            background-color: #f2f2f2;
+            text-align: left;
+        }
+
+        .table tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .table tbody tr:hover {
+            background-color: #ddd;
+        }
+
+    .action-links a {
+        color: #007bff;
+        text-decoration: none;
+        margin-right: 8px;
+        transition: color 0.3s;
+    }
+
+        .action-links a:hover {
+            color: #0056b3;
+        }
+</style>
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <a asp-action="Create" class="btn">Cadastrar</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DataFeedback)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IndicadorDesempenho)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ValorIndicador)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NomeCanalComunicacao)
+            </th>
+            <th>Ações</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.DataFeedback)</td>
+                <td>@Html.DisplayFor(modelItem => item.IndicadorDesempenho)</td>
+                <td>@Html.DisplayFor(modelItem => item.ValorIndicador)</td>
+                <td>@Html.DisplayFor(modelItem => item.NomeCanalComunicacao)</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn">Editar</a>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn">Detalhes</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn">Excluir</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

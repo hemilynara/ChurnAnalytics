@@ -1,0 +1,125 @@
+﻿@model ChurnAnalitycs.Models.InfoAdicional
+
+@{
+    ViewData["Title"] = "Detalhes";
+}
+<style>
+    body {
+        background: linear-gradient(to right, #f8f9fa, #e9ecef);
+        font-family: 'Roboto', sans-serif;
+        color: #495057;
+    }
+
+    .container {
+        margin-top: 50px;
+    }
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        color: #343a40;
+        margin-bottom: 20px;
+    }
+
+    .row {
+        margin-bottom: 20px;
+    }
+
+    .col-sm-2 {
+        font-weight: bold;
+    }
+
+    .col-sm-10 {
+        margin-bottom: 10px;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+
+        .btn-primary:hover {
+            background-color: #0069d9;
+            border-color: #0062cc;
+        }
+
+    a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+        a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+</style>
+
+<div class="container">
+    <h1>Detalhes</h1>
+
+    <div>
+        <h4>Editar Registro</h4>
+        <hr />
+        <dl class="row">
+            <dl class="row">
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.NomeIntegracaoSistema)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.NomeIntegracaoSistema)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.InfoProdutosServicos)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.InfoProdutosServicos)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.OutrasInformacoesSetor)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.OutrasInformacoesSetor)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.SegmentacaoClientes)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.SegmentacaoClientes)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.PersonaCliente)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.PersonaCliente)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.EstruturaOrganizacional)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.EstruturaOrganizacional)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.InformacoesRegulatoriasConformidade)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.InformacoesRegulatoriasConformidade)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.ObjetivosMetasEstrategicas)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.ObjetivosMetasEstrategicas)
+                </dd>
+
+
+            </dl>
+    </div>
+    <br />
+
+
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-primary">Editar</a> |
+        <a asp-action="Index" class="btn btn-primary">Voltar a Lista</a>
+    </div>
+</div>
+

@@ -1,0 +1,138 @@
+﻿@model ChurnAnalitycs.Models.CadastroEmpresa
+
+@{
+    ViewData["Title"] = "Excluir";
+}
+
+<style>
+    body {
+        background: linear-gradient(to right, #f8f9fa, #e9ecef);
+        font-family: 'Roboto', sans-serif;
+        color: #495057;
+    }
+
+    .container {
+        margin-top: 80px;
+    }
+
+        .container h1 {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .container .row {
+            margin: 0 auto;
+            max-width: 600px; /* Ajuste a largura da lista conforme necessário */
+        }
+
+        .container form {
+            margin-top: 20px;
+        }
+
+            .container form .form-group {
+                margin-bottom: 20px;
+            }
+
+                .container form .form-group input[type="submit"] {
+                    width: 100%;
+                    padding: 12px;
+                    font-size: 1rem;
+                    border-radius: 5px;
+                    border: 1px solid #ced4da;
+                    background-color: #dc3545;
+                    color: white;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+                }
+
+                    .container form .form-group input[type="submit"]:hover {
+                        background-color: #c82333;
+                    }
+
+                .container form .form-group a.btn {
+                    display: inline-block;
+                    padding: 12px;
+                    text-decoration: none;
+                    color: white;
+                    background-color: #007bff;
+                    border-radius: 5px;
+                    transition: background-color 0.3s ease;
+                }
+
+                    .container form .form-group a.btn:hover {
+                        background-color: #0056b3;
+                    }
+</style>
+
+<div class="container">
+    <h1>Excluir</h1>
+    <h3>Você tem certeza que deseja excluir esse registro?</h3>
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index" class="btn btn-primary">Voltar a Lista</a>
+    </form>
+    <div>
+        <hr />
+        <dl>
+            <dt class="col-sm-4">@Html.DisplayNameFor(model => model.RazaoSocial)</dt>
+            <dd class="col-sm-8 mb-3"><span>@Html.DisplayFor(model => model.RazaoSocial)</span></dd>
+
+            <dt class="col-sm-4">@Html.DisplayNameFor(model => model.CNPJ)</dt>
+            <dd class="col-sm-8 mb-3"><span>@Html.DisplayFor(model => model.CNPJ)</span></dd>
+
+            <dt class="col-sm-4">@Html.DisplayNameFor(model => model.SetorAtuacao)</dt>
+            <dd class="col-sm-8 mb-3"><span>@Html.DisplayFor(model => model.SetorAtuacao)</span></dd>
+
+            <dt class="col-sm-4">@Html.DisplayNameFor(model => model.Porte)</dt>
+            <dd class="col-sm-8 mb-3"><span>@Html.DisplayFor(model => model.Porte)</span></dd>
+
+            <dt class="col-sm-4">@Html.DisplayNameFor(model => model.Endereco)</dt>
+            <dd class="col-sm-8 mb-3"><span>@Html.DisplayFor(model => model.Endereco)</span></dd>
+
+            <dt class="col-sm-4">@Html.DisplayNameFor(model => model.Numero)</dt>
+            <dd class="col-sm-8 mb-3"><span>@Html.DisplayFor(model => model.Numero)</span></dd>
+
+            <dt class="col-sm-4">@Html.DisplayNameFor(model => model.Bairro)</dt>
+            <dd class="col-sm-8 mb-3"><span>@Html.DisplayFor(model => model.Bairro)</span></dd>
+
+            <dt class="col-sm-4">@Html.DisplayNameFor(model => model.Cidade)</dt>
+            <dd class="col-sm-8 mb-3"><span>@Html.DisplayFor(model => model.Cidade)</span></dd>
+
+            <dt class="col-sm-4">@Html.DisplayNameFor(model => model.Estado)</dt>
+            <dd class="col-sm-8 mb-3"><span>@Html.DisplayFor(model => model.Estado)</span></dd>
+
+            <dt class="col-sm-4">@Html.DisplayNameFor(model => model.CEP)</dt>
+            <dd class="col-sm-8 mb-3"><span>@Html.DisplayFor(model => model.CEP)</span></dd>
+
+            <dt class="col-sm-4">@Html.DisplayNameFor(model => model.Pais)</dt>
+            <dd class="col-sm-8 mb-3"><span>@Html.DisplayFor(model => model.Pais)</span></dd>
+
+            <dt class="col-sm-4">@Html.DisplayNameFor(model => model.NomeContatoPrincipal)</dt>
+            <dd class="col-sm-8 mb-3"><span>@Html.DisplayFor(model => model.NomeContatoPrincipal)</span></dd>
+
+            <dt class="col-sm-4">@Html.DisplayNameFor(model => model.CargoContatoPrincipal)</dt>
+            <dd class="col-sm-8 mb-3"><span>@Html.DisplayFor(model => model.CargoContatoPrincipal)</span></dd>
+
+            <dt class="col-sm-4">@Html.DisplayNameFor(model => model.EmailContato)</dt>
+            <dd class="col-sm-8 mb-3"><span>@Html.DisplayFor(model => model.EmailContato)</span></dd>
+
+            <dt class="col-sm-4">@Html.DisplayNameFor(model => model.TelefoneContato)</dt>
+            <dd class="col-sm-8 mb-3"><span>@Html.DisplayFor(model => model.TelefoneContato)</span></dd>
+
+            <dt class="col-sm-4">@Html.DisplayNameFor(model => model.ProdutoServicoAdquirido)</dt>
+            <dd class="col-sm-8 mb-3"><span>@Html.DisplayFor(model => model.ProdutoServicoAdquirido)</span></dd>
+
+            <dt class="col-sm-4">@Html.DisplayNameFor(model => model.ValorCompra)</dt>
+            <dd class="col-sm-8 mb-3"><span>@Html.DisplayFor(model => model.ValorCompra)</span></dd>
+
+            <dt class="col-sm-4">@Html.DisplayNameFor(model => model.ReceitaAnual)</dt>
+            <dd class="col-sm-8 mb-3"><span>@Html.DisplayFor(model => model.ReceitaAnual)</dt>
+            <dd class="col-sm-8 mb-3"><span>@Html.DisplayFor(model => model.ReceitaAnual)</span></dd>
+            <dt class="col-sm-4">@Html.DisplayNameFor(model => model.Lucratividade)</dt>
+            <dd class="col-sm-8 mb-3"><span>@Html.DisplayFor(model => model.Lucratividade)</span></dd>
+        </dl>
+    </div>
+</div>

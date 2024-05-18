@@ -1,0 +1,179 @@
+﻿@model ChurnAnalitycs.Models.CadastroEmpresa
+
+@{
+    ViewData["Title"] = "Cadastrar";
+}
+
+<style>
+    body {
+        background: linear-gradient(to right, #f8f9fa, #e9ecef);
+        font-family: 'Roboto', sans-serif;
+        color: #495057;
+    }
+
+    .form-container {
+        margin-top: 80px;
+    }
+
+        .form-container h1 {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .form-container form {
+            margin: 0 auto;
+            max-width: 400px; /* Ajuste a largura do formulário conforme necessário */
+        }
+
+            .form-container form .form-group {
+                margin-bottom: 20px;
+            }
+
+                .form-container form .form-group label {
+                    font-weight: 600;
+                }
+
+                .form-container form .form-group input[type="text"],
+                .form-container form .form-group input[type="submit"] {
+                    width: 100%;
+                    padding: 12px;
+                    font-size: 1rem;
+                    border-radius: 5px;
+                    border: 1px solid #ced4da;
+                    transition: border-color 0.3s ease;
+                }
+
+                .form-container form .form-group input[type="text"]:focus {
+                    border-color: #007bff;
+                }
+
+                .form-container form .form-group input[type="submit"] {
+                    background-color: #007bff;
+                    color: white;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+                }
+
+                .form-container form .form-group input[type="submit"]:hover {
+                    background-color: #0056b3;
+                }
+
+</style>
+
+<div class="container form-container">
+    <h1>Cadastrar</h1>
+    <form asp-action="Create">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="RazaoSocial" class="control-label"></label>
+            <input asp-for="RazaoSocial" class="form-control" />
+            <span asp-validation-for="RazaoSocial" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="CNPJ" class="control-label"></label>
+            <input asp-for="CNPJ" class="form-control" />
+            <span asp-validation-for="CNPJ" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="SetorAtuacao" class="control-label"></label>
+            <input asp-for="SetorAtuacao" class="form-control" />
+            <span asp-validation-for="SetorAtuacao" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Porte" class="control-label"></label>
+            <input asp-for="Porte" class="form-control" />
+            <span asp-validation-for="Porte" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Endereco" class="control-label"></label>
+            <input asp-for="Endereco" class="form-control" />
+            <span asp-validation-for="Endereco" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Numero" class="control-label"></label>
+            <input asp-for="Numero" class="form-control" />
+            <span asp-validation-for="Numero" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Bairro" class="control-label"></label>
+            <input asp-for="Bairro" class="form-control" />
+            <span asp-validation-for="Bairro" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Cidade" class="control-label"></label>
+            <input asp-for="Cidade" class="form-control" />
+            <span asp-validation-for="Cidade" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Estado" class="control-label"></label>
+            <input asp-for="Estado" class="form-control" />
+            <span asp-validation-for="Estado" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="CEP" class="control-label"></label>
+            <input asp-for="CEP" class="form-control" />
+            <span asp-validation-for="CEP" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Pais" class="control-label"></label>
+            <input asp-for="Pais" class="form-control" />
+            <span asp-validation-for="Pais" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="NomeContatoPrincipal" class="control-label"></label>
+            <input asp-for="NomeContatoPrincipal" class="form-control" />
+            <span asp-validation-for="NomeContatoPrincipal" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="CargoContatoPrincipal" class="control-label"></label>
+            <input asp-for="CargoContatoPrincipal" class="form-control" />
+            <span asp-validation-for="CargoContatoPrincipal" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="EmailContato" class="control-label"></label>
+            <input asp-for="EmailContato" class="form-control" />
+            <span asp-validation-for="EmailContato" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="TelefoneContato" class="control-label"></label>
+            <input asp-for="TelefoneContato" class="form-control" />
+            <span asp-validation-for="TelefoneContato" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="ProdutoServicoAdquirido" class="control-label"></label>
+            <input asp-for="ProdutoServicoAdquirido" class="form-control" />
+            <span asp-validation-for="ProdutoServicoAdquirido" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="ValorCompra" class="control-label"></label>
+            <input asp-for="ValorCompra" class="form-control" />
+            <span asp-validation-for="ValorCompra" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="ReceitaAnual" class="control-label"></label>
+            <input asp-for="ReceitaAnual" class="form-control" />
+            <span asp-validation-for="ReceitaAnual" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Lucratividade" class="control-label"></label>
+            <input asp-for="Lucratividade" class="form-control" />
+            <span asp-validation-for="Lucratividade" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Create" class="btn btn-primary" />
+        </div>
+    </form>
+</div>
+
+<div class="container">
+    <a asp-action="Index">Voltar a Lista</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+

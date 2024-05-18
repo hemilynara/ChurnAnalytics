@@ -1,0 +1,124 @@
+﻿@model ChurnAnalitycs.Models.Feedback
+
+@{
+    ViewData["Title"] = "Cadastrar";
+}
+
+<style>
+    body {
+        background: linear-gradient(to right, #f8f9fa, #e9ecef);
+        font-family: 'Roboto', sans-serif;
+        color: #495057;
+    }
+
+    .form-container {
+        margin-top: 80px;
+    }
+
+        .form-container h1 {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .form-container form {
+            margin: 0 auto;
+            max-width: 400px; /* Ajuste a largura do formulário conforme necessário */
+        }
+
+            .form-container form .form-group {
+                margin-bottom: 20px;
+            }
+
+                .form-container form .form-group label {
+                    font-weight: 600;
+                }
+
+                .form-container form .form-group input[type="text"],
+                .form-container form .form-group input[type="submit"] {
+                    width: 100%;
+                    padding: 12px;
+                    font-size: 1rem;
+                    border-radius: 5px;
+                    border: 1px solid #ced4da;
+                    transition: border-color 0.3s ease;
+                }
+
+                    .form-container form .form-group input[type="text"]:focus {
+                        border-color: #007bff;
+                    }
+
+                .form-container form .form-group input[type="submit"] {
+                    background-color: #007bff;
+                    color: white;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+                }
+
+                    .form-container form .form-group input[type="submit"]:hover {
+                        background-color: #0056b3;
+                    }
+
+</style>
+
+<div class="container form-container">
+    <h1>Cadastrar</h1>
+    <form asp-action="Create">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="DataFeedback" class="control-label"></label>
+            <input asp-for="DataFeedback" class="form-control" />
+            <span asp-validation-for="DataFeedback" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="IndicadorDesempenho" class="control-label"></label>
+            <input asp-for="IndicadorDesempenho" class="form-control" />
+            <span asp-validation-for="IndicadorDesempenho" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="ValorIndicador" class="control-label"></label>
+            <input asp-for="ValorIndicador" class="form-control" />
+            <span asp-validation-for="ValorIndicador" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="TipoInteracao" class="control-label"></label>
+            <input asp-for="TipoInteracao" class="form-control" />
+            <span asp-validation-for="TipoInteracao" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="NomeCanalComunicacao" class="control-label"></label>
+            <input asp-for="NomeCanalComunicacao" class="form-control" />
+            <span asp-validation-for="NomeCanalComunicacao" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="DataAtendimento" class="control-label"></label>
+            <input asp-for="DataAtendimento" class="form-control" />
+            <span asp-validation-for="DataAtendimento" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="TipoAtendimento" class="control-label"></label>
+            <input asp-for="TipoAtendimento" class="form-control" />
+            <span asp-validation-for="TipoAtendimento" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="ResolucaoProblema" class="control-label"></label>
+            <input asp-for="ResolucaoProblema" class="form-control" />
+            <span asp-validation-for="ResolucaoProblema" class="text-danger"></span>
+        </div>
+        <br />
+        <div class="form-group">
+            <input type="submit" value="Create" class="btn btn-primary" />
+        </div>
+    </form>
+</div>
+
+<div class="container">
+    <a asp-action="Index">Voltar a Lista</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

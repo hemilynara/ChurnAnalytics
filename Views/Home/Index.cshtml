@@ -1,0 +1,85 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to right, #f8f9fa, #e9ecef);
+            font-family: 'Roboto', sans-serif;
+            color: #495057;
+        }
+
+        .title-container {
+            text-align: center;
+            margin-top: 80px;
+            color: #343a40;
+        }
+
+            .title-container h1 {
+                font-size: 3rem;
+                margin-bottom: 20px;
+                font-weight: 700;
+            }
+
+            .title-container p {
+                font-size: 1.5rem;
+                transition: color 0.3s ease, transform 0.3s ease;
+            }
+
+                .title-container p:hover {
+                    color: #007bff;
+                    transform: scale(1.05);
+                }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+            .button-container a {
+                width: 500px; /* Alterando a largura dos botões */
+                margin: 10px 0;
+                color: white !important;
+                background-color: #007bff;
+                border-color: #007bff;
+                padding: 12px 25px;
+                font-size: 1.25rem;
+                border-radius: 50px;
+                text-align: center;
+                text-decoration: none;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            }
+
+                .button-container a:hover {
+                    background-color: #0056b3;
+                    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+                }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title-container">
+            <h1>Bem-vindo ao CHURNANALITYCS!</h1>
+            <p>Transforme dados em ações estratégicas e reduza o churn com precisão e inteligência.</p>
+        </div>
+        <div class="button-container">
+            <a asp-area="" asp-controller="CadastroEmpresas" asp-action="Index">Cadastro de Empresas</a>
+            <a asp-area="" asp-controller="Feedbacks" asp-action="Index">Índice de Satisfação</a>
+            <a asp-area="" asp-controller="InfoAdicionals" asp-action="Index">Informações Adicionais</a>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

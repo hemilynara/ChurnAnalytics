@@ -1,0 +1,123 @@
+﻿@model ChurnAnalitycs.Models.InfoAdicional
+
+@{
+    ViewData["Title"] = "Cadastrar";
+}
+
+<style>
+    body {
+        background: linear-gradient(to right, #f8f9fa, #e9ecef);
+        font-family: 'Roboto', sans-serif;
+        color: #495057;
+    }
+
+    .form-container {
+        margin-top: 80px;
+    }
+
+        .form-container h1 {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .form-container form {
+            margin: 0 auto;
+            max-width: 400px; /* Ajuste a largura do formulário conforme necessário */
+        }
+
+            .form-container form .form-group {
+                margin-bottom: 20px;
+            }
+
+                .form-container form .form-group label {
+                    font-weight: 600;
+                }
+
+                .form-container form .form-group input[type="text"],
+                .form-container form .form-group input[type="submit"] {
+                    width: 100%;
+                    padding: 12px;
+                    font-size: 1rem;
+                    border-radius: 5px;
+                    border: 1px solid #ced4da;
+                    transition: border-color 0.3s ease;
+                }
+
+                    .form-container form .form-group input[type="text"]:focus {
+                        border-color: #007bff;
+                    }
+
+                .form-container form .form-group input[type="submit"] {
+                    background-color: #007bff;
+                    color: white;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+                }
+
+                    .form-container form .form-group input[type="submit"]:hover {
+                        background-color: #0056b3;
+                    }
+
+</style>
+
+<div class="container form-container">
+    <h1>Cadastrar</h1>
+    <form asp-action="Create">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="NomeIntegracaoSistema" class="control-label"></label>
+            <input asp-for="NomeIntegracaoSistema" class="form-control" />
+            <span asp-validation-for="NomeIntegracaoSistema" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="InfoProdutosServicos" class="control-label"></label>
+            <input asp-for="InfoProdutosServicos" class="form-control" />
+            <span asp-validation-for="InfoProdutosServicos" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="OutrasInformacoesSetor" class="control-label"></label>
+            <input asp-for="OutrasInformacoesSetor" class="form-control" />
+            <span asp-validation-for="OutrasInformacoesSetor" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="SegmentacaoClientes" class="control-label"></label>
+            <input asp-for="SegmentacaoClientes" class="form-control" />
+            <span asp-validation-for="SegmentacaoClientes" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="PersonaCliente" class="control-label"></label>
+            <input asp-for="PersonaCliente" class="form-control" />
+            <span asp-validation-for="PersonaCliente" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="EstruturaOrganizacional" class="control-label"></label>
+            <input asp-for="EstruturaOrganizacional" class="form-control" />
+            <span asp-validation-for="EstruturaOrganizacional" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="InformacoesRegulatoriasConformidade" class="control-label"></label>
+            <input asp-for="InformacoesRegulatoriasConformidade" class="form-control" />
+            <span asp-validation-for="InformacoesRegulatoriasConformidade" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="ObjetivosMetasEstrategicas" class="control-label"></label>
+            <input asp-for="ObjetivosMetasEstrategicas" class="form-control" />
+            <span asp-validation-for="ObjetivosMetasEstrategicas" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Create" class="btn btn-primary" />
+        </div>
+    </form>
+</div>
+
+<div class="container">
+    <a asp-action="Index">Voltar a Lista</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

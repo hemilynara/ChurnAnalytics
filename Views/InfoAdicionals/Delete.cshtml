@@ -1,0 +1,119 @@
+﻿@model ChurnAnalitycs.Models.InfoAdicional
+
+@{
+    ViewData["Title"] = "Excluir";
+}
+
+<style>
+    body {
+        background: linear-gradient(to right, #f8f9fa, #e9ecef);
+        font-family: 'Roboto', sans-serif;
+        color: #495057;
+    }
+
+    .container {
+        margin-top: 50px;
+    }
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        color: #343a40;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .btn-danger {
+        background-color: #dc3545;
+        border-color: #dc3545;
+    }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+            border-color: #bd2130;
+        }
+
+    .row {
+        margin-bottom: 20px;
+    }
+
+    .col-sm-2 {
+        font-weight: bold;
+    }
+
+    .col-sm-10 {
+        margin-bottom: 10px;
+    }
+</style>
+
+<div class="container">
+    <h1>Excluir</h1>
+
+    <h3>Você tem certeza que deseja excluir esse registro?</h3>
+    <div>
+        <h4>Informações Adicionais</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.NomeIntegracaoSistema)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.NomeIntegracaoSistema)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.InfoProdutosServicos)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.InfoProdutosServicos)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.OutrasInformacoesSetor)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.OutrasInformacoesSetor)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.SegmentacaoClientes)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.SegmentacaoClientes)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.PersonaCliente)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.PersonaCliente)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.EstruturaOrganizacional)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.EstruturaOrganizacional)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.InformacoesRegulatoriasConformidade)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.InformacoesRegulatoriasConformidade)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.ObjetivosMetasEstrategicas)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.ObjetivosMetasEstrategicas)
+            </dd>
+        </dl>
+        <br />
+
+
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="Id" />
+            <input type="submit" value="Delete" class="btn btn-danger" /> |
+            <a asp-action="Index">Voltar a Lista</a>
+        </form>
+    </div>
+</div>
